@@ -1,0 +1,323 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--intPayments part--------------*/
+#int_payment{
+    display: block;
+    width: 100%;
+    background: $section;
+    padding: 20px 0;
+    .row_rel{
+        width: 100%;
+        position: relative;
+        .earth{
+            display: grid;
+            place-items: left;
+            padding-top: 183px;
+            img{
+                display: block;
+                animation: zerk 5s alternate infinite;
+            }
+            @keyframes zerk {
+                0%{
+                    transform: translateX(10px);
+                }
+                33%{
+                    transform: translateY(10px);
+                }
+                66%{
+                    transform: translateX(-10px);
+                }
+                100%{
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        .lady{
+            width: 100%;
+            background: url(../images/payment-banner-bg.png) no-repeat center/cover; 
+            img{
+                margin-right: -20%;
+            }
+        }
+        .relfly2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 90px 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            .hedcap{
+                display: block;
+                h5{
+                    color:$blue;
+                    @include h5;
+                }
+                h1{
+                    color: $h2;
+                    @include h1;
+                }
+                p{
+                    color:$para;
+                    @include p;
+                }
+                .intbtn{
+                    display: flex;
+                    gap:30px;
+                    align-items: center;
+                    a{
+                        @include mainButton;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*--onPayments--------------------*/
+#onPayments{
+    padding: 100px 0;
+    .oimg{
+        .w-100{
+            margin-left: -150px;
+        }
+
+    }
+    .ontext{
+        width: 100%;
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        h2{
+            color:$h2;
+            @include h2;
+        }
+        .huntP{
+            @include p;
+            padding-bottom: 20px;
+        }
+
+    }
+    .onCard{
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid $border1;
+        padding: 30px 20px;
+        text-align: center;
+        margin-top: 20px;
+        .mb{
+            @include h5;
+            margin-bottom: 20px;
+        }
+        p{
+            color:$border;
+            @include p1;
+        }
+        i{
+            font-size: 50px;
+            color:$blue;
+            margin-bottom: 15px;
+        }
+        &:hover{
+            border: none;
+            box-shadow: 0 0 10px 1px $box-shaddow;
+        }
+    }
+}
+
+/*--platform----------------------*/
+#platform{
+    display: block;
+    width: 100%;
+    background: $blue;
+    background-image:url(../images/more-features-illu-1.png), url(../images/more-features-illu-2.png);
+    background-repeat: no-repeat;
+    background-position: left center, right bottom 50px;
+    padding: 70px 0;
+    .platHeading{
+        display: block;
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+        h5{
+            color:$yellow;
+            @include h5;
+        }
+        h2{
+            color:$white;
+            @include h2;
+        }
+        p{
+            color:$para1;
+            @include p;
+        }
+    }
+    .glob{
+        text-align: center;
+        mix-blend-mode: 20px;
+        i{
+            display: inline-block;
+            margin: auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: $yellow;
+            display: grid;
+            place-items: center;
+            font-size: 50px;
+            color:$white;
+            margin-bottom: 20px;
+        }
+        h5{
+            color:$white;
+            @include h5;
+        }
+        p{
+            color:$para1 !important;
+            @include p1;
+        }
+    }
+}
+
+/*--helpingPlatform---------------*/
+#helpingPlatform{
+    padding: 100px 0;
+    img{
+        transform:scale(1.4);
+        margin-left: -150px;
+
+    }
+    .hpHeading{
+        text-align: left !important;
+        @include headline;
+    }
+    .onlinPayment{
+        padding: 20px;
+        border: 1px solid $border1;
+        width: 100%;
+        border-radius: 10px;margin-bottom: 20px;
+        &:hover{
+            box-shadow: 0 0 10px 1px $box-shaddow;
+        }
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        p{
+            color:$para1;
+            @include p1;
+        }
+    }
+    .rightAbslt{
+        position: relative;
+        .absol{
+            position: absolute;
+            right: -18%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+        }
+    }
+}
+
+/*--solution----------------------*/
+#solution{
+    background: url(../images/business-model-bg.png)no-repeat center/cover;
+    padding: 70px 0 50px 0;
+    .solution_heading{
+        text-align: center;
+        @include headline;
+        h5{
+            @include h5;
+            color:$yellow;
+        }
+        h2{
+            @include h2;
+            color:$white;
+        }
+        .Pclass{
+            margin-bottom: 10px;
+            @include p1;
+            color:$white;
+        }
+    }
+    .rowlmargin{
+        margin-bottom: -200px;
+        .solCard{
+            padding: 30px;
+            text-align: center;
+            background: $white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 1px $box-shaddow;
+            margin-top: 20px;
+            i{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                background: $fressgren;
+                margin: auto;
+                color:$blue;
+                font-size: 60px;
+                margin-bottom: 20px;
+            }
+            h5{
+                color:$blue;
+                @include h5;
+            }
+            p{
+                @include p1;
+            }
+        }
+    }
+}
+
+/*--features----------------------*/
+#features{
+    padding: 200px 0 0 0;
+    .fes_heading{
+        text-align: center;
+        margin-bottom: 60px;
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        h2{
+            color:$h2;
+            @include h2;
+        }
+        p{
+            display: block;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color:$para;
+            @include p1;
+        }
+    }
+    .fes_list{
+        margin-bottom: 30px;
+        display: flex;
+        i{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: $section;
+            display: grid;
+            place-items: center;
+            color:$blue;
+            font-size: 40px;
+            margin-right: 20px;
+        }
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        p{
+            @include p1;
+        }
+    }
+}

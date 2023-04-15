@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- navbar part------------------>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="myicon">
+          <span class="line1 icn"></span>
+          <span class="line2 icn"></span>
+          <span class="line3 icn"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse mecollapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 meul">
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              personal
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="freelance.html">freelancher payment</a></li>
+              <li><a class="dropdown-item" href="#">subscription</a></li>
+              <li><a class="dropdown-item" href="security.html">security</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              business
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="#">business payment</a></li>
+              <li><a class="dropdown-item" href="#">business account</a></li>
+              <li><a class="dropdown-item" href="#">corporate card</a></li>
+              <li><a class="dropdown-item" href="#">expanse management</a></li>
+              <li><a class="dropdown-item" href="#">budgeting</a></li>
+              <li><a class="dropdown-item" href="#">integration</a></li>
+              <li><a class="dropdown-item" href="#">invoice</a></li>
+              <li><a class="dropdown-item" href="#">security</a></li>
+              <li><a class="dropdown-item" href="#">rewards</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              company
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="about_us.html">about us</a></li>
+              <li><a class="dropdown-item" href="career.html">career</a></li>
+              <li><a class="dropdown-item" href="careerDetails.html">career details</a></li>
+              <li><a class="dropdown-item" href="#">blog <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">blog</a></li>
+                  <li><a href="#" class="dropdown-item">blog details</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="Error.html">error</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              help
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="help.html">help center</a></li>
+              <li><a class="dropdown-item" href="#">help category</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btnme">
+          <button class="topbtn"><a href="paylioAccount.html">login</a></button>
+          <button class="topbtn"><a href="paylioAccount.html">sign up <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- pilyoAccount---------------->
+  <section id="paylioAccount">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <img class="w-100 plimg" src="images/login-reg-bg.png" alt="img">
+        </div>
+        <div class="col-lg-6">
+          <div class="paylioTxt text-center">
+            <h5>account</h5>
+            <h2>wellcome to paylio</h2>
+            <p class="cmnP login">allready have an account?<a href="#">login</a></p>
+            <p class="cmnP signup"><a href="#"><i class="fa-brands fa-google"></i> sign up width google</a></p>
+            <p class="cmnP orSign">or continue width</p>
+            <form action="#">
+              <div class="inputGrp">
+                <label for="email">your email</label>
+                <input type="email" id="email" placeholder="enter your email">
+              </div>
+              <div class="inputGrp">
+                <label for="pass">your pass</label>
+                <input type="password" id="pass" placeholder="enter your [password]">
+              </div>
+              <div class="inputGrp">
+                <button type="submit" class="sbmtbtn">
+                  submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

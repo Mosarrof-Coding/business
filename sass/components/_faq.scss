@@ -1,0 +1,139 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--testimonial part--------------*/
+#faq{
+    padding: 100px 0 200px 0;
+    .heading{
+        display: block;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        h2{
+            color:$h2;
+            @include h2;
+        }
+        p{
+            color:$para;
+            @include p;
+        }
+    }
+    .accor{
+        margin: 20px 0 50px 0;
+        display: block;
+        width:100%;
+        .accrodion{
+            .accrodion-item{
+                .accordion-button {
+                    box-shadow: 0 0 10px 1px $para1;
+                }
+                .accordion-button:focus {
+                    border: none;outline: none;
+                    box-shadow: 0 0 10px 1px $para1;
+                }
+            }
+        }
+    }
+    .newesparent{
+        width: 100%;
+        display: block;
+        position: relative;
+        padding-bottom: 50px;
+        .neweslayer{
+            width: 83%;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            display: block;
+            background:url(../images/footer-bg-left.png), url(../images/footer-bg-right.png);
+            background-repeat: no-repeat;
+            background-position: left 40px center, right bottom;
+            border-radius: 20px;
+            .nleter{
+                width: 100%;
+                display: grid;
+                place-items: center;
+                padding: 80px 20px;
+                .label{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    label{
+                        display:block;
+                        font-size: 30px;
+                        font-weight: 700;
+                        color:$white;
+                        text-transform: capitalize;
+                    }
+                }
+                .inputdiv{
+                    width: 60%;
+                    display: inline-block;
+                    margin:0 auto;
+                    position: relative;
+                    border-radius: 50px;
+                    overflow: hidden;
+                    input{
+                        width: 100%;
+                        padding: 20px 30px;
+                        border: none;
+                        outline: none;
+                        &::placeholder{
+                            text-transform: capitalize;
+                        }
+                    }
+                    .flybtn{
+                        width: unset;
+                        padding: 2px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        border: none;
+                        background: $blue;
+                        display: grid;
+                        place-items: center;
+                        position: absolute;
+                        right: 10px;
+                        top: 7px;
+                        i{
+                            color:$white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.accordion-button {
+    background: $white;
+}
+.accordion-button::after {
+    background-image: none;
+    
+}
+.accordion-button:not(.collapsed) {
+    color: $h2;
+    background-color:$white;
+    box-shadow: none;
+}
+.accordion-button:not(.collepsed)::after {
+    background-image: none;
+    content: "\2b";
+    font-family: "font awesome 5 free";
+    transform: rotate(0deg);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border:none;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-item {
+    border:none;
+}

@@ -1,0 +1,200 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--career part--------------*/
+#career{
+    background: url(../images/ab-banner-bg.png) no-repeat center/cover;
+    padding-top: 50px;
+    .career_align{
+        display: flex;
+        align-items: center;
+        .career_heading{
+            h1{
+                font-size: 76px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color:$white;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                color:$white !important;
+                @include p1;
+                i{
+                    color:$white;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .career_img{
+            width: 100%;
+            text-align: right;
+        }
+    }
+}
+
+/* current openings----------*/
+#curent_openings{
+    padding: 115px 0;
+    .openings{
+        text-align: left !important;
+        @include headline;
+    }
+    .btn_mixit{
+        width: 100%;
+        button{
+            display: inline-block;
+            padding: 12px 30px;
+            background: $white;
+            border: 1px solid $border;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 50px;
+            margin: 7px 5px;
+            &:hover{
+                background: $blue;
+                color:$white;
+            }
+        }
+    }
+    .overfloww{
+        max-height: 500px;
+        overflow-y: scroll;
+        .current_card{
+            box-shadow: 0 0 10px 1px $box-shaddow;
+            background: $white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            .box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .cardUl{
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    p{
+                        margin: 0 !important;
+                        @include p1;
+                    }
+                    li{
+                        list-style-type: disc;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color:$para1;
+                        margin-left: 30px;
+                    }
+                }
+                .ibox{
+                    display: block;
+                    i{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: $gray;
+                        display: grid;
+                        place-items: center;
+                        font-size: 20px;
+                        color:$blue;
+                        align-self: flex-end;
+                    }
+                }
+    
+            }
+            .counter{
+                font-weight: 600;
+                color:$blue;
+            }
+            &:hover{
+                background: $blue;
+                a{
+                color:$white !important;
+                }
+                .counter{
+                    color:$white;
+                }
+            }
+        }
+    }
+    html::-webkit-scrollbar,
+    .overfloww::-webkit-scrollbar{
+        width: 5px;
+        background: $gray;
+        border-radius: 5px;
+    }
+    html::-webkit-scrollbar-thumb,
+    .overfloww::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background: $red;
+    }
+}
+
+/*--perks--------------------*/
+#perks{
+    background: $section;
+    padding: 70px 0;
+    .perk_heading{
+        @include headline;
+    }
+    .perk_item{
+        padding: 30px;
+        background: $white;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 1px $box-shaddow;
+        margin-bottom: 20px;
+        i{
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: $fressgren;
+            font-size: 50px;
+            color:$border;
+            display: grid;
+            place-items: center;
+            margin-bottom: 10px;
+        }
+        .fa-clock{
+            background: $gray;
+            color:$blue;
+        }
+        .fa-umbrella-beach{
+            background: $yollo2;
+            color:$iplate;
+        }
+        .fa-shield-heart{
+            background: $fressgren;
+            color:$cadetblue;
+        }
+        .fa-user-plus{
+            background: $para1;
+            color:$para;
+        }
+        .fa-apple-whole{
+            background: $fressgren;
+            color: $yellow;
+        }
+        h4{
+            @include h4;
+        }
+        p{
+            @include p1;
+        }
+    }
+    .team{
+        text-align: center;
+        button{
+            @include button;
+        }
+    }
+}
+
+/*--faq2--------------------*/
+#faq{
+    padding: 70px 0 140px 0;
+    .faq_caption{
+        @include headline;
+    }
+}

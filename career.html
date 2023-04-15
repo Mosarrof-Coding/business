@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- navbar part------------------>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="myicon">
+          <span class="line1 icn"></span>
+          <span class="line2 icn"></span>
+          <span class="line3 icn"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse mecollapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 meul">
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              personal
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="freelance.html">freelancher payment</a></li>
+              <li><a class="dropdown-item" href="#">subscription</a></li>
+              <li><a class="dropdown-item" href="security.html">security</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              business
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="#">business payment</a></li>
+              <li><a class="dropdown-item" href="#">business account</a></li>
+              <li><a class="dropdown-item" href="#">corporate card</a></li>
+              <li><a class="dropdown-item" href="#">expanse management</a></li>
+              <li><a class="dropdown-item" href="#">budgeting</a></li>
+              <li><a class="dropdown-item" href="#">integration</a></li>
+              <li><a class="dropdown-item" href="#">invoice</a></li>
+              <li><a class="dropdown-item" href="#">security</a></li>
+              <li><a class="dropdown-item" href="#">rewards</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              company
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="about_us.html">about us</a></li>
+              <li><a class="dropdown-item" href="career.html">career</a></li>
+              <li><a class="dropdown-item" href="careerDetails.html">career details</a></li>
+              <li><a class="dropdown-item" href="#">blog <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">blog</a></li>
+                  <li><a href="#" class="dropdown-item">blog details</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="Error.html">error</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              help
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="help.html">help center</a></li>
+              <li><a class="dropdown-item" href="#">help category</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btnme">
+          <button class="topbtn"><a href="paylioAccount.html">login</a></button>
+          <button class="topbtn"><a href="paylioAccount.html">sign up <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Abbanner part--------------->
+  <section id="career">
+    <div class="container">
+      <div class="row career_align">
+        <div class="col-lg-6">
+          <div class="career_heading">
+            <h1>career</h1>
+            <p><span>home</span><i class="fa-solid fa-arrow-right-long"></i><span>company</span><i class="fa-solid fa-arrow-right-long"></i><span>career</span></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="career_img">
+            <img src="images/banner-career.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- career openings------------->
+  <section id="curent_openings">
+    <div class="container">
+      <div class="row d-flex justify-content-between">
+        <div class="col-lg-6">
+          <div class="openings">
+            <h5>Join our team today!</h5>
+            <h2>Current Openings</h2>
+            <p>Even if you don’t find a suitable position, you can still send your resume to <a href="#">careers@paylio.com</a></p>
+          </div>
+          <div class="btn_mixit">
+            <button>All jobs</button>
+            <button>product designer</button>
+            <button>front-end developer</button>
+            <button>back-end developer</button>
+          </div>
+        </div>
+        <div class="col-lg-5 overfloww">
+          <div class="current_card">
+            <h5><a href="#">UI/UX intern</a></h5>
+            <div class="box">
+              <ul class="cardUl">
+                <p>sydney, australia</p>
+                <li>full time</li>
+                <li>entry level</li>
+              </ul>
+              <div class="ibox">
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <span class="counter">
+              $30k- 50k
+            </span>
+          </div>
+          <div class="current_card">
+            <h5><a href="#">Junior Web Developer</a></h5>
+            <div class="box">
+              <ul class="cardUl">
+                <p>amarika, new york</p>
+                <li>full time</li>
+                <li>entry level</li>
+              </ul>
+              <div class="ibox">
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <span class="counter">
+              $40k- 70k
+            </span>
+          </div>
+          <div class="current_card">
+            <h5><a href="#">Digital Designer</a></h5>
+            <div class="box">
+              <ul class="cardUl">
+                <p>sydney, australia</p>
+                <li>full time</li>
+                <li>entry level</li>
+              </ul>
+              <div class="ibox">
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <span class="counter">
+              $30k- 40k
+            </span>
+          </div>
+          <div class="current_card">
+            <h5><a href="#">Back-End Developer</a></h5>
+            <div class="box">
+              <ul class="cardUl">
+                <p>Quatar, Doha</p>
+                <li>full time</li>
+                <li>entry level</li>
+              </ul>
+              <div class="ibox">
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <span class="counter">
+              $30k- 50k
+            </span>
+          </div>
+          <div class="current_card">
+            <h5><a href="#">Web Designer</a></h5>
+            <div class="box">
+              <ul class="cardUl">
+                <p>Nageshwari, Kumedpur</p>
+                <li>full time</li>
+                <li>entry level</li>
+              </ul>
+              <div class="ibox">
+                <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <span class="counter">
+              $50k- 80k
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- perks----------------------->
+  <section id="perks">
+    <div class="container">
+      <div class="perk_heading">
+        <h5>our perks</h5>
+        <h2>great perks of working at pyilo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus deleniti aspernatur ad tenetur?</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h4>remote</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-clock"></i>
+            <h4>flexiable hours</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <h4>unlimited pro</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h4>medical insurance</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-user-plus"></i>
+            <h4>career growth</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="perk_item">
+            <i class="fa-solid fa-apple-whole"></i>
+            <h4>Great culture</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam deserunt hic totam in nihil?</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="team">
+            <button>
+              join our team <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq------------------------->
+  <section id="faq">
+    <div class="container">
+      <div class="faq_caption">
+        <h5>freequently asked question</h5>
+        <h2>If you got questions we have answer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolor saepe magni temporibus?</p>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <div class="faqueAns">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How do I know if you have received my application?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What's Paylio's interview process and how do I get started?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What's the culture like at Paylio?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingx">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsex" aria-expanded="false" aria-controls="flush-collapsex">
+                    Cancel transaction
+                  </button>
+                </h2>
+                <div id="flush-collapsex" class="accordion-collapse collapse" aria-labelledby="flush-headingx" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingm">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsem" aria-expanded="false" aria-controls="flush-collapsem">
+                    Can I send multiple payments?
+                  </button>
+                </h2>
+                <div id="flush-collapsem" class="accordion-collapse collapse" aria-labelledby="flush-headingm" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newesparent">
+        <div class="neweslayer">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="nleter">
+                <div class="label">
+                  <label for="send">subscribe to our newesleter</label>
+                </div>
+                <div class="inputdiv">
+                  <input type="email" name="send" id="send" placeholder="your emeil here">
+                  <span class="flybtn" type="submit"><i class="fa-solid fa-arrow-right-long"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer---------------------->
+  <footer class="footer_sectiom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <ul class="about">
+            <span><a href="#">about us</a></span>
+            <span><a href="#">support</a></span>
+            <span><a href="#">fees</a></span>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul class="social_icons">
+            <span><a href="#"><i class="face fa-brands fa-facebook-f"></i></a></span>
+            <span><a href="#"><i class="tweet fa-brands fa-twitter"></i></a></span>
+            <span><a href="#"><i class="in fa-brands fa-linkedin-in"></i></a></span>
+            <span><a href="#"><i class="insta fa-brands fa-instagram"></i></a></span>
+          </ul>
+        </div>
+      </div>
+      <div class="border_botom">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <span class="copyright">
+            Copyright © 2022 <a href="#">Paylio</a>. All Rights Reserved.
+          </span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="terms">
+            <span><a href="#">Terms</a></span>
+            <span><a href="#">Privacy</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--banner part--------------*/
+#banner{
+    background: $section url(../images/banner-map.png);
+    background-repeat: no-repeat;
+    background-position: top 0px right;
+    background-size: auto;
+    padding: 100px 0 200px 0;
+    position: relative;
+    .banner_text{
+        margin-top: 30px;
+        h5{
+            font-size: 24px;
+            line-height: 31.2px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color:$blue;
+        }
+        h1{
+            font-size: 76px;
+            font-weight: 700;
+            color:$h2;
+            text-transform: capitalize;
+        }
+        .bannerP{
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 400;
+            text-transform: capitalize;
+            color:$h2;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .freeAcc{
+            margin-right: 20px;
+            @include mainButton;
+        }
+    }
+    .overlap1{
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: $white;
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        z-index: 99 !important;
+        form{
+            .xchange{
+                padding: 20px;
+                width: 100%;
+                background: $gray;
+                height: auto;
+                display: flex;
+                align-items: end;
+                border-radius: 10px;
+                .money{
+                    display: block;
+                    width: 60%;
+                    label{
+                        display: block;
+                        text-transform: capitalize;
+                    }
+                    input{
+                        width: 100%;
+                        display: block;
+                        padding:7px 0;
+                        text-transform: capitalize;
+                        border: none;
+                        background: $gray;
+                        &::placeholder{
+                            color:$border;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .currencychoose{
+                    display: block;
+                    width: 40%;
+                    select{
+                        width: 100%;
+                        padding: 7px 0;
+                        text-align: center;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        border-radius: 10px;
+                        background: $white;
+                        border: none;
+                        outline: none;
+                        position: relative;
+                        display: block;
+                        option{
+                            font-weight: normal;
+                            display: block;
+                            white-space: nowrap;
+                            min-height: 1.2em;
+                            padding: 0px 2px 1px;
+                            border: none;
+                            outline: none;
+                            border-radius: 10px !important;
+                        }
+                    }
+                }
+            }
+            .calc_area{
+                padding-left: 15px;
+                .calculation{
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    margin: 20px 0;
+                    gap:10px;
+                    i{
+                        font-size: 14px;
+                    }
+                    h6{
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        margin-bottom: 0;
+                    }
+                }
+                .liflex{
+                    display: flex;
+                    .left{
+                        width: 50%;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 20px;
+                            i{
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 50%;
+                                background: $gray;
+                                display: grid;
+                                place-items: center;
+                                font-size: 10px;
+                                padding-top: 1px;
+                                margin-right: 7px;
+                            }
+                            h6{
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+
+                }
+            }
+            .calcbutton{
+                button{
+                    @include mainButton1;
+                }
+            }
+        }
+    }
+    .l1{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 120px;
+        display: block;
+        animation: turnto 5s infinite alternate-reverse;
+    }
+    .l2{
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        width: 120px;
+        display: block;
+        animation: turnto 4s infinite alternate-reverse;
+    }
+    .l3{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 120px;
+        display: block;
+        animation: turnto1 3s infinite alternate-reverse;
+        z-index: 0;
+    }
+    .l4{
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        width: 100px;
+        display: block;
+        animation: turnto .5s infinite alternate-reverse;
+    }
+    .l5{
+        position: absolute;
+        left: 55%;
+        top: 15%;
+        transform: translateX(-50%);
+        width: 100px;
+        display: block;
+        animation: turnto1 2s infinite alternate-reverse;
+    }
+    @keyframes turnto {
+        0%{
+            transform: translateY(-5%);
+        }
+        100%{
+            transform: translateY(3%);
+        }
+    }
+    @keyframes turnto1 {
+        0%{
+            transform: translateY(-3%);
+        }
+        100%{
+            transform: translateY(3%);
+        }
+    }
+    .countUp{
+        width: 95%;
+        padding: 5px;
+        display: block;
+        background: $white;
+        box-shadow: 0 0 10px 4px $gray;
+        margin: 0 auto;
+        border-radius: 20px;
+        position: absolute;
+        bottom:-16%;
+        left: 50%;
+        transform: translateX(-50%);
+        .counter{
+            width: 100%;
+            background: $section;
+            border-radius: 20px;
+            border: 1px solid $border;
+            display: block;
+            text-align: center;
+            padding: 50px;
+            .number{
+                font-size: 45px;
+                font-weight: 700;
+                color:$blue;
+            }
+            .txt{
+                font-size: 18px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

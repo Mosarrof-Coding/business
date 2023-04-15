@@ -1,0 +1,58 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--intPayments part--------------*/
+/*--creat account--------------*/
+#paylioAccount{
+    padding: 150px 0;
+    .paylioTxt{
+        h5{
+            @include h5;
+        }
+        h2{
+            @include h2;
+        }
+        .cmnP{
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+        .login{
+            font-weight: 500;
+        }
+        .signup{
+            font-weight: 400;
+        }
+        .orSign{
+            font-weight: 500;
+        }
+        form{
+            .inputGrp{
+                label{
+                    display: block;
+                    margin-bottom: 6px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 15px;
+                    text-transform: capitalize;
+                    ::placeholder{
+                        text-transform: capitalize;
+                        color:$box-shaddow;
+                    }
+                }
+                .sbmtbtn{
+                    @include mainButton1;
+                }
+            }
+        }
+    }
+    .plimg{
+        display: block;
+        transform: scale(1.5);
+        margin-left: -25%;
+        margin-top: 50px;
+
+    }
+}

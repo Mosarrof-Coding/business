@@ -1,0 +1,83 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--fingertips part--------------*/
+#payment_step{
+    padding: 250px 0 50px 0;
+    .step_heading{
+        text-align: center;
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        h2{
+            color:$h2;
+            @include h2;
+        }
+        p{
+            color:$para;
+            @include p1;
+        }
+    }
+    .step{
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+        padding: 30px 20px;
+        border-radius: 10px;
+        background: $section;
+        border: 1px solid $para1;
+        img{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        h5{
+            @include h5;
+        }
+        p{
+            @include p1;
+        }
+        &:hover{
+            box-shadow: 0 0 10px 1px $para1;
+            border: none;
+        }
+    }
+    .stp4::after{
+        display: none;
+    }
+    .approw{
+        margin: 100px 0 30px 0;
+        .apptips{
+            h5{
+                color:$blue;
+                @include h5;
+            }
+            h2{
+                color:$h2;
+                @include h2;
+            }
+            p{
+                color:$para1;
+                @include p;
+                margin-bottom: 20px;
+            }
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    @include p1;
+                    margin: 10px 0;
+                    i{
+                        margin-right: 7px;
+                        color:$blue;
+                    }
+                }
+            }
+            .playstor{
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- navbar part------------------>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="myicon">
+          <span class="line1 icn"></span>
+          <span class="line2 icn"></span>
+          <span class="line3 icn"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse mecollapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 meul">
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              personal
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="freelance.html">freelancher payment</a></li>
+              <li><a class="dropdown-item" href="#">subscription</a></li>
+              <li><a class="dropdown-item" href="security.html">security</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              business
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="#">business payment</a></li>
+              <li><a class="dropdown-item" href="#">business account</a></li>
+              <li><a class="dropdown-item" href="#">corporate card</a></li>
+              <li><a class="dropdown-item" href="#">expanse management</a></li>
+              <li><a class="dropdown-item" href="#">budgeting</a></li>
+              <li><a class="dropdown-item" href="#">integration</a></li>
+              <li><a class="dropdown-item" href="#">invoice</a></li>
+              <li><a class="dropdown-item" href="#">security</a></li>
+              <li><a class="dropdown-item" href="#">rewards</a></li>
+              <li><a class="dropdown-item" href="#">fees</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              company
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="about_us.html">about us</a></li>
+              <li><a class="dropdown-item" href="career.html">career</a></li>
+              <li><a class="dropdown-item" href="careerDetails.html">career details</a></li>
+              <li><a class="dropdown-item" href="#">blog <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" class="dropdown-item">blog</a></li>
+                  <li><a href="#" class="dropdown-item">blog details</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="Error.html">error</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown hover">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              help
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu block">
+              <li><a class="dropdown-item" href="help.html">help center</a></li>
+              <li><a class="dropdown-item" href="#">help category</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btnme">
+          <button class="topbtn"><a href="paylioAccount.html">login</a></button>
+          <button class="topbtn"><a href="paylioAccount.html">sign up <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner part------------------>
+  <section id="banner">
+    <div class="overlapart">
+      <img class="layer l1" src="images/banner-clock.png" alt="">
+      <img class="layer l5" src="images/banner-wallet.png" alt="">
+      <img class="layer l2" src="images/banner-box.png" alt="">
+      <img class="layer l4" src="images/banner-rocket.png" alt="">
+      <img class="layer l3" src="images/banner-human.png" alt="">
+    </div>
+    <div class="container ">
+      <div class="row justify-content-between">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+          <div class="banner_text">
+            <h5>Trusted by over 3M customers</h5>
+            <h1>Pay Anyone, Anywhere</h1>
+            <p class="bannerP">
+              Quickly and easily send, receive and request money online with Paylio. Get a customised solution to fit your business needs.
+            </p>
+            <button class="freeAcc">open a free account</button>
+            <button class="freeAcc">see how it works</button>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-md-6 col-sm-12">
+          <div class="overlap1">
+            <form action="">
+              <div class="xchange">
+                <div class="money">
+                  <label for="amount">you send</label>
+                  <input type="text" name="amount" id="amount" placeholder="enter amount">
+                </div>
+                <div class="currencychoose">
+                  <select name="" id="">
+                    <option value="">usd</option>
+                    <option value="">gbp</option>
+                    <option value="">aus</option>
+                  </select>
+                </div>
+              </div>
+              <div class="calc_area">
+                <div class="calculation">
+                  <i class="fa-solid fa-recycle"></i>
+                  <h6>show calculation</h6>
+                </div>
+                <div class="liflex">
+                  <div class="left">
+                    <li><i class="fa-solid fa-minus"></i> <h6>10.04 USD</h6></li>
+                    <li><i class="fa-solid fa-equals"></i> <h6>989.94 USD</h6></li>
+                    <li><i class="fa-solid fa-xmark"></i> <h6>1.3934</h6></li>
+                  </div>
+                  <div class="left">
+                    <li><h6>Our fee</h6></li>
+                    <li><h6>We’ll Convert</h6></li>
+                    <li><h6 style="color:green">Paylio Rate</h6></li>
+                  </div>
+                </div>
+              </div>
+              <div class="xchange">
+                <div class="money">
+                  <label for="amount">Recipient gets</label>
+                  <input type="text" name="amount" id="amount" placeholder="1,380.69" disabled>
+                </div>
+                <div class="currencychoose">
+                  <select name="" id="">
+                    <option value="">usd</option>
+                    <option value="">gbp</option>
+                    <option value="">aus</option>
+                  </select>
+                </div>
+              </div>
+              <div class="calcbutton">
+                <button>get startet</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="countUp">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="C_itm1 counter">
+            <div class="number">
+              <span class="zero counterup">
+                47
+              </span>
+              <span>
+                +
+              </span>
+            </div>
+            <div class="txt">
+              supported courencies
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="C_itm1 counter">
+            <div class="number">
+              <span class="zero counterup">
+                89
+              </span>
+              <span>
+                +
+              </span>
+            </div>
+            <div class="txt">
+              Available courencies
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="C_itm1 counter">
+            <div class="number">
+              <span class="zero counterup">
+                38
+              </span>
+              <span>
+                +
+              </span>
+            </div>
+            <div class="txt">
+              Payment Methods
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="C_itm1 counter">
+            <div class="number">
+              <span class="zero counterup">7</span>
+              <span>/</span>
+              <span class="zero counterup">24</span>
+            </div>
+            <div class="txt">
+              supported Team
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- fingertips------------------->
+  <section id="fingertips">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="fing_text">
+            <h5>send money in a heartbeat</h5>
+            <h2>the world at your fingertipes</h2>
+            <p>signup to start saving on international money transfer and currenchy exchange</p>
+          </div>
+        </div>
+      </div>
+      <div class="row row_net align-items-center">
+        <div class="col-xxl-6 col-xl-5 order-xl-0 order-1">
+          <div class="globalpayment">
+            <img class="w-100" src="images/global-payment-img.png" alt="img">
+          </div>
+        </div>
+        <div class="col-xxl-6 col-xl-7">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <div class="int_network">
+                <img src="images/global-payment-icon-1.png" alt="">
+                <h5>piece of mind</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio.</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="int_network">
+                <img src="images/global-payment-icon-2.png" alt="">
+                <h5>piece of mind</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio.</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="int_network">
+                <img src="images/global-payment-icon-3.png" alt="">
+                <h5>piece of mind</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio.</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div class="int_network">
+                <img src="images/global-payment-icon-4.png" alt="">
+                <h5>piece of mind</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit posuere vel venenatis, eu sit massa. Volutpat massa rhoncus odio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- payments place--------------->
+  <section id="payment_policy">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="policy_heading">
+            <h5>high speeds, low fees, no hassale</h5>
+            <h2>all your payments in one place</h2>
+            <p>Get used to low fees and great exchange rates on international money transfers.Expand your business worldwide</p>
+          </div>
+        </div>
+        <div class="col-lg-12 mainpol">
+          <div class="row policy_stove">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="policy">
+                <img src="images/our-solutions-icon-1.png" alt="">
+                <h5>payments</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="policy">
+                <img src="images/our-solutions-icon-2.png" alt="">
+                <h5>collection</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="policy">
+                <img src="images/our-solutions-icon-3.png" alt="">
+                <h5>conversion</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="policy">
+                <img src="images/our-solutions-icon-4.png" alt="">
+                <h5>global account</h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- payment step-------------- -->
+  <section id="payment_step">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="step_heading">
+            <h5>hoe it works?</h5>
+            <h2>just few step to start</h2>
+            <p>it's easyer then you think.follow three simple steps.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="step">
+            <img src="images/how-works-icon-4.png" alt="">
+            <h5>regester for free</h5>
+            <p>Simply sign up online for free and verify your identity</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="step">
+            <img src="images/global-payment-icon-1.png" alt="">
+            <h5>setup your transfar</h5>
+            <p>Simply sign up online for free and verify your identity</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="step">
+            <img src="images/how-works-icon-2.png" alt="">
+            <h5>make your payment</h5>
+            <p>Simply sign up online for free and verify your identity</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="step stp4">
+            <img src="images/how-works-icon-3.png" alt="">
+            <h5>you're all done!</h5>
+            <p>Simply sign up online for free and verify your identity</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center approw">
+        <div class="col-lg-6">
+          <div class="mobileapp">
+            <img class="w-100" src="images/app-download-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="apptips">
+            <h5>app download</h5>
+            <h2>fast, secure money transfer</h2>
+            <p>Access your account via your mobile phone. View balance, transfer funds, view transactions wherever you are.</p>
+            <ul>
+              <li><i class="fa-regular fa-square-check"></i>login with fingerprint or face id</li>
+              <li><i class="fa-regular fa-square-check"></i>simple few taps to send money</li>
+              <li><i class="fa-regular fa-square-check"></i>view transition history</li>
+              <li><i class="fa-regular fa-square-check"></i>get instant app notification</li>
+            </ul>
+            <div class="playstor">
+              <a href="#"><img src="images/GooglePlay-btn.png" alt="img"></a>
+              <a href="#"><img src="images/apple-btn.png" alt="img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonial parp------------->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="test_capt">
+            <h5>testimonials</h5>
+            <h2>what our customars sayes</h2>
+            <p>245m+ happy clients all around the world. Don’t just take our word for it</p>
+          </div>
+        </div>
+      </div>
+      <div class="nothing">
+        <div class="row testimonialSlider">
+          <div class="col-lg-4">
+            <div class="TsliderItem">
+              <div class="static_rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h5>great fast reliable service</h5>
+              <p>"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+              <div class="desig">
+                <span>
+                  <img src="images/testimonials-img-1.png" alt="img">
+                </span>
+                <span class="desig_txt">
+                  <p class="name">domini fork</p>
+                  <p class="title">web designer</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="TsliderItem">
+              <div class="static_rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h5>great fast reliable service</h5>
+              <p>"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+              <div class="desig">
+                <span>
+                  <img src="images/testimonials-img-2.png" alt="img">
+                </span>
+                <span class="desig_txt">
+                  <p class="name">domini fork</p>
+                  <p class="title">U/X designer</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="TsliderItem">
+              <div class="static_rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h5>great fast reliable service</h5>
+              <p>"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+              <div class="desig">
+                <span>
+                  <img src="images/testimonials-img-3.png" alt="img">
+                </span>
+                <span class="desig_txt">
+                  <p class="name">domini fork</p>
+                  <p class="title">back-end developer</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="TsliderItem">
+              <div class="static_rating">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h5>great fast reliable service</h5>
+              <p>"Paylio has always been a reliable solution for my business. I am very satisfied with their speedy service and professional customer care. I highly recommend Paylio to businesses with regular overseas payments."</p>
+              <div class="desig">
+                <span>
+                  <img src="images/testimonials-img-3.png" alt="img">
+                </span>
+                <span class="desig_txt">
+                  <p class="name">domini fork</p>
+                  <p class="title">front-end developer</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center">
+          <div class="testislickbtn">
+            <button class="btn1">
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <button class="btn2">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- faq-------------------------->
+  <section id="faq">
+    <div class="container">
+      <div class="heading">
+        <h5>freequently asked question</h5>
+        <h2>if you got questions we have answer</h2>
+        <p>We have a list of frequently asked questions about us</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="accor">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    How to send money online?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How much are money transfer fees?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What is the fastest way to send money abroad?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    How to use Paylio?
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    How does Paylio protect your money?
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="accor">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading1">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                    How to send money online?
+                  </button>
+                </h2>
+                <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                    How much are money transfer fees?
+                  </button>
+                </h2>
+                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2o" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                    What is the fastest way to send money abroad?
+                  </button>
+                </h2>
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                    How to use Paylio?
+                  </button>
+                </h2>
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-heading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                    How does Paylio protect your money?
+                  </button>
+                </h2>
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newesparent">
+        <div class="neweslayer">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="nleter">
+                <div class="label">
+                  <label for="send">subscribe to our newesleter</label>
+                </div>
+                <div class="inputdiv">
+                  <input type="email" name="send" id="send" placeholder="your emeil here">
+                  <div class="flybtn" type="submit"><i class="fa-solid fa-arrow-right-long"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer----------------------->
+  <footer class="footer_sectiom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <ul class="about">
+            <span><a href="#">about us</a></span>
+            <span><a href="#">support</a></span>
+            <span><a href="#">fees</a></span>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <ul class="social_icons">
+            <span><a href="#"><i class="face fa-brands fa-facebook-f"></i></a></span>
+            <span><a href="#"><i class="tweet fa-brands fa-twitter"></i></a></span>
+            <span><a href="#"><i class="in fa-brands fa-linkedin-in"></i></a></span>
+            <span><a href="#"><i class="insta fa-brands fa-instagram"></i></a></span>
+          </ul>
+        </div>
+      </div>
+      <div class="border_botom">
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <span class="copyright">
+            Copyright © 2022 <a href="#">Paylio</a>. All Rights Reserved.
+          </span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="terms">
+            <span><a href="#">Terms</a></span>
+            <span><a href="#">Privacy</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

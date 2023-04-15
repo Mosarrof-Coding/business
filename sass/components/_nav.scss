@@ -1,0 +1,95 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--nav part--------------*/
+.navbar{
+    padding: 20px 0;
+    border-bottom: 1px solid $border;
+    .mecollapse{
+        li{
+            margin: 0 15px;
+            a{
+                text-transform: capitalize;
+                color:$para;
+                font-weight: 600;
+                transition: 0.3s;
+                font-size: 18px;
+                line-height: 30px;
+                &:hover{
+                    color:$blue;
+                }
+            }
+            :hover{
+                .block{
+                    opacity: 1;
+                    visibility: visible;
+                    display: block;
+                }
+            }
+        }
+    }
+    .dropdown-menu{
+        border: none !important;
+        li{
+            margin: 0 !important;
+        }
+    }
+    .btnme{
+        .topbtn{
+            @include mainButton;
+        }
+    }
+    .navbar-toggler{
+        border: none !important;
+        outline: none !important;
+        padding: 0 !important
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    .navbar-toggler-icon{
+        display: none !important;
+    }
+    .myicon{
+        display: flex;
+        gap:8px;
+        flex-direction: column;
+        .icn{
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $h2;
+            transition: .5s;
+        }
+        .line1.rotright{
+            transform: rotate(45deg) translateY(16px);
+        }
+        .rotleft{
+            transform: rotate(-45deg) translateY(-16px);
+        }
+        .none{
+            transform: translateX(-50px);
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+.navbar.fixed{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: $gray;
+    box-shadow: 0 0 5px 1px $box-shaddow;
+    border-bottom: none;
+    z-index: 999;
+    .mecollapse{
+        li{
+            a{
+                color:$blue;
+                &:hover{
+                    color:$h2;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,122 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--careerDetails part--------------*/
+#careerDetails{
+    background: url(../images/ab-banner-bg.png) no-repeat center/cover;
+    padding-top: 50px;
+    .career_align{
+        display: flex;
+        align-items: center;
+        .career_heading{
+            h1{
+                font-size: 76px;
+                font-weight: 700;
+                text-transform: capitalize;
+                color:$white;
+            }
+            p{
+                display: flex;
+                align-items: center;
+                color:$white !important;
+                @include p1;
+                i{
+                    color:$white;
+                    margin: 0 10px;
+                }
+            }
+        }
+        .career_img{
+            width: 100%;
+            text-align: right;
+        }
+    }
+    .product{
+        position: relative;
+        .productDesigner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 80%;
+            background: $white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 1px $box-shaddow;
+            z-index: 999;
+            .box_hed{
+                width: 90%;
+                margin: 0 !important;
+                text-align: left !important;
+                @include headline;
+                .address{
+                    display: flex;
+                    gap:30px;
+                    align-items: center;
+                    .country{
+                        text-transform: capitalize;
+                        color:$blue;
+                        @include p;
+                    }
+                    li{
+                        list-style-type: disc;
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .box_button{
+                width: unset;
+                a{
+                    @include mainButton;
+                }
+            }
+        }
+    }
+}
+
+/*--designCategory_who -------------*/
+#designCategory_who{
+    padding: 300px 0 0 0;
+    .asBtn{
+        .asbtn{
+            margin: 15px 0;
+            a{
+                text-transform: capitalize;
+                font-size: 18px;
+                font-weight: 700;
+                color:$h2;
+            }
+        }
+
+    }
+    .details{
+        h3{
+            @include h3;
+            color:$h2;
+        }
+        .who_p{
+            text-transform: capitalize;
+            font-weight: 400;
+            color:$para;
+            padding-bottom: 30px;
+        }
+    }
+    .responsibilities{
+        ul{
+            li{
+                list-style-type: disc;
+            }
+        }
+        padding-bottom: 30px;
+        @include p1;
+        h3{
+            @include h3;
+        }
+    }
+    .responsBtn{
+        a{
+            @include button;
+        }
+    }
+}

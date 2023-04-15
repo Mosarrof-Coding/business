@@ -1,0 +1,55 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--payment_policy part--------------*/
+#payment_policy{
+    padding: 100px 0 150px 0;
+    background: url(../images/our-solutions-bg.png) no-repeat center/cover;
+    .policy_heading{
+        text-align: center;
+        max-width: 600px;
+        display: block;
+        margin: auto;
+        h5{
+            color:$yellow;
+            @include h5;
+        }
+        h2{
+            color:$white;
+            @include h2;
+        }
+        p{
+            color:$para1 !important;
+            @include p1;
+        }
+    }
+    .mainpol{
+        width: 100%;
+        display: block;
+        position: relative;
+        .policy_stove{
+            position: absolute;
+            left: 0;
+            top:100%;
+            .policy{
+                padding: 20px;
+                background: $white;
+                border-radius: 20px;
+                display: block;
+                text-align: center;
+                box-shadow: 2px 3.464px 24px 0px $box-shaddow;
+                margin-bottom: 20px;
+                img{
+                    width: 110px;
+                    margin-bottom: 15px;
+                }
+                h5{
+                    @include h5;
+                }
+                p{
+                    margin-top: 10px;
+                    @include p1;
+                }
+            }
+        }
+    }
+}

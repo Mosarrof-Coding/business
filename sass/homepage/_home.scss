@@ -1,0 +1,21 @@
+// index.html scss------
+@import "../components/nav";
+@import "../components/banner";
+@import "../components/fingertips";
+@import "../components/payment_policy";
+@import "../components/payment_step";
+@import "../components/testimonial";
+@import "../components/faq";
+@import "../components/footer_sectiom";
+// company.html scss-----------
+@import "../sub_components/About_us";
+@import "../sub_components/career";
+@import "../sub_components/careerDetails";
+@import "../sub_components/Error";
+// personal.html scss----------
+@import "../personal_components/freelance";
+@import "../personal_components/security";
+// paylioAccount.html scss----------
+@import "../personal_components/paylioAccount";
+// help.html scss--------------
+@import "../help.scss/help";

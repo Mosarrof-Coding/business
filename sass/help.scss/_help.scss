@@ -1,0 +1,117 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--help part--------------*/
+#helping_way{
+    background: url(../images/integrations-banner-bg.png) no-repeat center/cover;
+    padding: 50px 0 0 0;
+    .help_heading{
+        h3{
+            text-align: center;
+            color:$white;
+            @include h3;
+        }
+        .help_iput{
+            width: 60%;
+            display: block;
+            margin:20px auto;
+            overflow: hidden;
+            position: relative;
+            background: transparent;
+            input{
+                width: 100%;
+                padding: 15px 20px;
+                border-radius: 80px;
+                border: none;
+                text-transform: capitalize;
+                background: $section;
+                
+                &::placeholder{
+                    color: $box-shaddow;
+                    text-transform: capitalize;
+                    background: $section;
+                }
+            }
+            .sicn{
+                position: absolute;
+                right: 1%;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: grid;
+                place-items: center;
+                font-size: 20px;
+                color:$blue;
+                cursor: pointer;
+            }
+        }
+    }
+    .helpbtn_1{
+        padding: 20px;
+        background: $white;
+        border-radius: 50px;
+        display: inline-block;
+        margin:0 auto;
+        border: 1px solid $box-shaddow;
+        margin-bottom: -80px;
+        .btnleft{
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1;
+            color:$white;
+            background: $blue;
+            text-transform: capitalize;
+            border: none;
+            &:hover{
+                color:$blue;
+                background: $white;
+                box-shadow: 0 0 10px 1px $box-shaddow;
+            }
+        }
+    }
+}
+
+/*--help_type---------------*/
+#help_type{
+    .help_item{
+        padding: 30px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid $border1;
+        margin-top: 20px;
+        overflow: hidden;
+        transition: all linear .2s;
+        img{
+            margin-bottom: 20px;
+        }
+        h5{
+            a{
+                color:$h2;
+            }
+            @include h5;
+        }
+        &:hover{
+            box-shadow: 2px 3px 24px 0 $box-shaddow;
+            border: none;
+            a{
+                color:$yellow;
+            }
+        }
+    }
+}
+
+/*--submit_request----------*/
+#submit_request{
+    padding: 100px 0;
+    background: $section;
+    .submit_heading{
+        @include headline;
+        a{
+            @include mainButton;
+        }
+    }
+}

@@ -1,0 +1,788 @@
+@media (max-width: 575px) {
+  body {
+    padding: 0 1%;
+  }
+  h1 {
+    font-size: 33px !important;
+    font-weight: 600 !important;
+  }
+  h2 {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+  }
+  h3 {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+  }
+  h4 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+  }
+  h5 {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+  }
+  h6 {
+    font-size: 17px !important;
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+  }
+  a {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+  span {
+    font-size: 20px !important;
+  }
+  button {
+    font-size: 14px !important;
+    padding: 5px 20px !important;
+  }
+  label {
+    font-size: 20px !important;
+  }
+  ::-moz-placeholder {
+    font-size: 20px !important;
+  }
+  ::placeholder {
+    font-size: 20px !important;
+  }
+  .navbar {
+    padding: 5px 0 !important;
+  }
+  .navbar .myicon {
+    gap: 6px;
+  }
+  .navbar .myicon .icn {
+    width: 30px;
+    height: 2px;
+    transition: 0.5s;
+  }
+  .navbar .myicon .line1.rotright {
+    transform: rotate(45deg) translateY(11px);
+  }
+  .navbar .myicon .rotleft {
+    transform: rotate(-45deg) translateY(-11px);
+  }
+  .navbar .myicon .none {
+    transform: translateX(-30px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  #banner {
+    padding-top: 20px !important;
+  }
+  #banner .layer {
+    display: none;
+  }
+  #banner .l4 {
+    width: 80px !important;
+    display: block !important;
+    left: 37%;
+    bottom: 12% !important;
+    animation: turnto 2s infinite alternate-reverse;
+  }
+  #banner .countUp {
+    bottom: -22% !important;
+  }
+  #banner .countUp .counter {
+    border-radius: 0px !important;
+    border: none !important;
+    padding: 0px !important;
+  }
+  #fingertips {
+    padding-top: 260px !important;
+  }
+  #fingertips .row_net {
+    display: flex;
+  }
+  #fingertips .row_net .globalpayment img {
+    margin-top: 10% !important;
+    margin-left: 0%;
+    transform: scale(1);
+  }
+  #fingertips .row_net .int_network img {
+    width: 50px !important;
+  }
+  #payment_policy {
+    padding: 50px 0 250px 0 !important;
+    margin-bottom: 750px;
+  }
+  #payment_policy .policy {
+    margin: 0 10px;
+  }
+  #payment_step .step {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+  #payment_step .approw {
+    flex-direction: column-reverse !important;
+    margin: 30px 0 0 0;
+  }
+  #payment_step .approw .mobileapp {
+    margin-top: 30px;
+  }
+  #testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #faq {
+    padding: 70px 0 100px 0 !important;
+  }
+  #faq .heading {
+    width: 80%;
+  }
+  #faq .accor {
+    margin: 0 0 0 0 !important;
+  }
+  #faq .newesparent {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #faq .newesparent .neweslayer {
+    top: 5% !important;
+    width: 100% !important;
+    background: url(../images/footer-bg-right.png);
+    background-position: center;
+    block-size: cover;
+    margin-bottom: 0px !important;
+  }
+  #faq .newesparent .neweslayer .nleter {
+    padding: 50px 30px;
+  }
+  #faq .newesparent .neweslayer .nleter .label {
+    margin-bottom: 15px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .label label {
+    line-height: 1 !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv {
+    width: 100% !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input {
+    padding: 10px 20px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input ::-moz-placeholder {
+    font-size: 14px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input ::placeholder {
+    font-size: 14px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv .flybtn {
+    width: 30px;
+    height: 30px;
+  }
+  .footer_sectiom {
+    padding: 50px 1px 20px 1px !important;
+  }
+  .footer_sectiom .about {
+    display: block;
+    text-align: center !important;
+    margin: 10px;
+  }
+  .footer_sectiom .social_icons {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .footer_sectiom .copyright {
+    display: block;
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+  .footer_sectiom .terms {
+    text-align: center;
+  }
+  #int_payment {
+    padding: 20px 0 0 0 !important;
+    background: transparent !important;
+  }
+  #int_payment .intbtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px !important;
+  }
+  #int_payment .intbtn a {
+    padding: 5px 10px !important;
+    margin: 0 !important;
+  }
+  #int_payment .relfly2 {
+    padding: 30px 0 !important;
+  }
+  #int_payment .relfly2 .hedcap h1 {
+    font-size: 25px !important;
+    max-width: 350px !important;
+  }
+  #int_payment .earth {
+    padding-top: 10px !important;
+  }
+  #int_payment .lady {
+    display: none;
+  }
+  #onPayments {
+    padding: 120px 0 20px 0 !important;
+  }
+  #onPayments .oimg {
+    display: none;
+  }
+  #helpingPlatform .img {
+    display: none !important;
+  }
+  #platform {
+    padding: 30px 0 !important;
+  }
+  #helpingPlatform {
+    padding: 30px 0 !important;
+  }
+  #solution .sol_absol {
+    left: 3.5% !important;
+  }
+  #security_ban {
+    height: 40vh !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  h1 {
+    font-size: 36px !important;
+    font-weight: 600 !important;
+  }
+  h2 {
+    font-size: 28px !important;
+    font-weight: 500 !important;
+  }
+  h3 {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+  }
+  h4 {
+    font-size: 22px !important;
+    font-weight: 500 !important;
+  }
+  h5 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+  h6 {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+  }
+  a {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+  span {
+    font-size: 22px !important;
+  }
+  button {
+    font-size: 16px !important;
+    padding: 7px 25px !important;
+  }
+  label {
+    font-size: 20px !important;
+  }
+  ::-moz-placeholder {
+    font-size: 24px !important;
+  }
+  ::placeholder {
+    font-size: 24px !important;
+  }
+  .navbar {
+    padding: 5px 0 !important;
+  }
+  .navbar .myicon {
+    gap: 6px;
+  }
+  .navbar .myicon .icn {
+    width: 30px;
+    height: 2px;
+    transition: 0.5s;
+  }
+  .navbar .myicon .line1.rotright {
+    transform: rotate(45deg) translateY(11px);
+  }
+  .navbar .myicon .rotleft {
+    transform: rotate(-45deg) translateY(-11px);
+  }
+  .navbar .myicon .none {
+    transform: translateX(-30px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  #banner {
+    padding-top: 20px !important;
+    padding-bottom: 80px !important;
+  }
+  #banner .layer {
+    display: none;
+  }
+  #banner .l4 {
+    width: 80px !important;
+    display: block !important;
+    left: 45%;
+    bottom: 0% !important;
+    animation: turnto 2s infinite alternate-reverse;
+  }
+  #banner .countUp {
+    bottom: -34% !important;
+  }
+  #banner .countUp .counter {
+    border-radius: 20px !important;
+    border: none !important;
+    padding: 20px !important;
+    margin: 10px 0 !important;
+  }
+  #fingertips {
+    padding-top: 350px !important;
+  }
+  #fingertips .row_net {
+    display: flex;
+  }
+  #fingertips .row_net .globalpayment img {
+    margin-top: 10% !important;
+    margin-left: 0%;
+    transform: scale(1);
+  }
+  #fingertips .row_net .int_network img {
+    width: 50px !important;
+  }
+  #payment_policy {
+    padding: 50px 0 250px 0 !important;
+    margin-bottom: 750px;
+  }
+  #payment_policy .policy {
+    margin: 0 10px;
+  }
+  #payment_step .step {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+  #payment_step .approw {
+    flex-direction: column-reverse !important;
+    margin: 30px 0 0 0;
+  }
+  #payment_step .approw .mobileapp {
+    margin-top: 30px;
+  }
+  #testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #faq {
+    padding: 70px 0 50px 0 !important;
+  }
+  #faq .heading {
+    width: 80%;
+  }
+  #faq .accor {
+    margin: 0 0 0 0 !important;
+  }
+  #faq .newesparent {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #faq .newesparent .neweslayer {
+    top: 0 !important;
+    width: 100% !important;
+    background: url(../images/footer-bg-right.png);
+    background-position: center;
+    block-size: cover;
+    margin-bottom: 0px !important;
+  }
+  #faq .newesparent .neweslayer .nleter {
+    padding: 34px;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv {
+    width: 100% !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input {
+    padding: 10px 30px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv .flybtn {
+    width: 30px;
+    height: 30px;
+  }
+  .footer_sectiom {
+    padding: 50px 1px 20px 1px !important;
+  }
+  .footer_sectiom .about {
+    display: block;
+    text-align: center !important;
+    margin: 10px;
+  }
+  .footer_sectiom .social_icons {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .footer_sectiom .copyright {
+    display: block;
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+  .footer_sectiom .terms {
+    text-align: center;
+  }
+  #security_ban {
+    height: 40vh !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 45px !important;
+    font-weight: 600 !important;
+  }
+  h2 {
+    font-size: 35px !important;
+    font-weight: 500 !important;
+  }
+  h3 {
+    font-size: 28px !important;
+    font-weight: 500 !important;
+  }
+  h4 {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+  }
+  h5 {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+  }
+  h6 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  a {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+  span {
+    font-size: 24px !important;
+  }
+  button {
+    font-size: 16px !important;
+    padding: 8px 25px !important;
+  }
+  label {
+    font-size: 22px !important;
+  }
+  ::-moz-placeholder {
+    font-size: 24px !important;
+  }
+  ::placeholder {
+    font-size: 24px !important;
+  }
+  .navbar {
+    padding: 5px 0 !important;
+  }
+  #banner {
+    padding-top: 20px !important;
+    padding-bottom: 80px !important;
+  }
+  #banner .layer {
+    display: none;
+  }
+  #banner .l4 {
+    width: 80px !important;
+    display: block !important;
+    left: 45%;
+    bottom: 0% !important;
+    animation: turnto 2s infinite alternate-reverse;
+  }
+  #banner .countUp {
+    bottom: -49% !important;
+  }
+  #banner .countUp .counter {
+    border-radius: 20px !important;
+    border: none !important;
+    padding: 20px !important;
+    margin: 10px 0 !important;
+  }
+  #fingertips {
+    padding-top: 350px !important;
+  }
+  #fingertips .row_net {
+    display: flex;
+  }
+  #fingertips .row_net .globalpayment img {
+    margin-top: 10% !important;
+    margin-left: 0%;
+    transform: scale(1);
+  }
+  #fingertips .row_net .int_network img {
+    width: 50px !important;
+  }
+  #payment_policy {
+    padding: 50px 0 250px 0 !important;
+    margin-bottom: 150px;
+  }
+  #payment_policy .policy {
+    margin: 0 10px;
+  }
+  #payment_step .step {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+  #payment_step .approw {
+    flex-direction: column-reverse !important;
+    margin: 30px 0 0 0;
+  }
+  #payment_step .approw .mobileapp {
+    margin-top: 30px;
+  }
+  #testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #faq {
+    padding: 70px 0 80px 0 !important;
+  }
+  #faq .heading {
+    width: 80%;
+  }
+  #faq .accor {
+    margin: 0 0 0 0 !important;
+  }
+  #faq .newesparent {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #faq .newesparent .neweslayer {
+    top: 0 !important;
+    width: 100% !important;
+    background: url(../images/footer-bg-right.png);
+    background-position: center;
+    block-size: cover;
+    margin-bottom: 0px !important;
+  }
+  #faq .newesparent .neweslayer .nleter {
+    padding: 34px;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv {
+    width: 100% !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input {
+    padding: 10px 30px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv .flybtn {
+    width: 30px;
+    height: 30px;
+  }
+  .footer_sectiom {
+    padding: 50px 1px 20px 1px !important;
+  }
+  .footer_sectiom .about {
+    display: block;
+    text-align: center !important;
+    margin: 10px;
+  }
+  .footer_sectiom .social_icons {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+  }
+  .footer_sectiom .copyright {
+    display: block;
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+  .footer_sectiom .terms {
+    text-align: center;
+    margin-top: 0 !important;
+  }
+  #security_ban {
+    height: 50vh !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 45px !important;
+    font-weight: 600 !important;
+  }
+  h2 {
+    font-size: 35px !important;
+    font-weight: 500 !important;
+  }
+  h3 {
+    font-size: 28px !important;
+    font-weight: 500 !important;
+  }
+  h4 {
+    font-size: 25px !important;
+    font-weight: 500 !important;
+  }
+  h5 {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+  }
+  h6 {
+    font-size: 20px !important;
+    font-weight: 400 !important;
+  }
+  p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+  }
+  a {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+  }
+  span {
+    font-size: 24px !important;
+  }
+  button {
+    font-size: 16px !important;
+    padding: 8px 25px !important;
+  }
+  label {
+    font-size: 22px !important;
+  }
+  ::-moz-placeholder {
+    font-size: 24px !important;
+  }
+  ::placeholder {
+    font-size: 24px !important;
+  }
+  .navbar {
+    padding: 5px 0 !important;
+  }
+  .navbar li {
+    margin: 0 7px !important;
+  }
+  #banner {
+    padding-top: 20px !important;
+    padding-bottom: 80px !important;
+  }
+  #banner .layer {
+    display: none;
+  }
+  #banner .l4 {
+    width: 80px !important;
+    display: block !important;
+    left: 45%;
+    bottom: 0% !important;
+    animation: turnto 2s infinite alternate-reverse;
+  }
+  #banner .countUp {
+    bottom: -26% !important;
+  }
+  #banner .countUp .counter {
+    border-radius: 20px !important;
+    border: none !important;
+    padding: 20px !important;
+    margin: 10px 0 !important;
+  }
+  #fingertips {
+    padding-top: 200px !important;
+  }
+  #fingertips .row_net {
+    display: flex;
+  }
+  #fingertips .row_net .globalpayment img {
+    margin-top: 10% !important;
+    margin-left: 0%;
+    transform: scale(1);
+  }
+  #fingertips .row_net .int_network img {
+    width: 50px !important;
+  }
+  #payment_policy {
+    padding: 50px 0 250px 0 !important;
+    margin-bottom: 150px;
+  }
+  #payment_policy .policy {
+    margin: 0 10px;
+  }
+  #payment_step .step {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+  #payment_step .approw {
+    flex-direction: column-reverse !important;
+    margin: 30px 0 0 0;
+  }
+  #payment_step .approw .mobileapp {
+    margin-top: 30px;
+  }
+  #testimonial {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #faq {
+    padding: 70px 0 80px 0 !important;
+  }
+  #faq .heading {
+    width: 80%;
+  }
+  #faq .accor {
+    margin: 0 0 0 0 !important;
+  }
+  #faq .newesparent {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  #faq .newesparent .neweslayer {
+    top: 0 !important;
+    width: 100% !important;
+    background: url(../images/footer-bg-right.png);
+    background-position: center;
+    block-size: cover;
+    margin-bottom: 0px !important;
+  }
+  #faq .newesparent .neweslayer .nleter {
+    padding: 34px;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv {
+    width: 100% !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv input {
+    padding: 10px 30px !important;
+  }
+  #faq .newesparent .neweslayer .nleter .inputdiv .flybtn {
+    width: 30px;
+    height: 30px;
+  }
+  .footer_sectiom {
+    padding: 50px 1px 20px 1px !important;
+  }
+  .footer_sectiom .about {
+    display: block;
+    text-align: center !important;
+    margin: 10px;
+  }
+  .footer_sectiom .social_icons {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+  }
+  .footer_sectiom .copyright {
+    display: block;
+    font-size: 14px !important;
+    text-align: center !important;
+  }
+  .footer_sectiom .terms {
+    text-align: center;
+    margin-top: 0 !important;
+  }
+  #security_ban {
+    height: 50vh !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  #security_ban {
+    height: 70vh !important;
+  }
+}
+@media (min-width: 1400px) {
+  #security_ban {
+    height: 100vh !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

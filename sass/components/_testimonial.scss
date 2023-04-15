@@ -1,0 +1,90 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--testimonial part--------------*/
+#testimonial{
+    background: $section;
+    padding: 100px 0;
+    .test_capt{
+        text-align: center;
+        max-width: 600px;
+        margin: auto;
+        display: block;
+        h5{
+            color:$blue;
+            @include h5;
+        }
+        h2{
+           
+            color:$h2;
+            @include h2;
+        }
+        p{
+            @include p1;
+        }
+    }
+    .TsliderItem{
+        margin: 20px 10px;
+        background: $white;
+        border-radius: 20px;
+        padding: 20px;
+        .static_rating{
+            i{
+                
+            }
+        }
+        h5{
+            margin: 10px 0;
+            color:$blue;
+            @include h5;
+        }
+        p{
+            @include p1;
+        }
+        .desig{
+            display: flex;
+            span{
+                img{
+
+                }
+            }
+            .desig_txt{
+                margin-left: 10px;
+                .name{
+                    @include h5;
+                }
+                .title{
+                    margin: 0;
+                    line-height: 0;
+                    font-size: 15px;
+                    color:$blue;
+                }
+            }
+        }
+    }
+    .testislickbtn{
+        button.btn1{
+            border: none;
+            padding: 5px 15px;
+            background: $yellow;
+            display: inline-block;
+            border-radius: 10px 0 0 10px;
+            color:$white;
+            transition: ease-out .3s;
+            &:hover{
+                padding-right: 30px;
+            }
+        }
+        button.btn2{
+            border: none;
+            padding: 5px 15px;
+            background: $yellow;
+            display: inline-block;
+            border-radius: 0 10px 10px 0;
+            color:$white;
+            transition: ease-out .3s;
+            &:hover{
+                padding-left: 30px;
+            }
+        }
+    }
+}

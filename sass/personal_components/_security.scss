@@ -1,0 +1,120 @@
+@import "../variables/variable";
+@import "../mixins/mixin";
+/*--security part--------------*/
+#security_ban{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/ab-banner-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .shap_area{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        .secure_img1{
+            position: absolute;
+            left: 3%;
+            top: 20%;
+            display: block;
+            width: 20%;
+        }
+        .secure_img2{
+            position: absolute;
+            right: 3%;
+            top: 3%;
+            display: block;
+            width: 15%;
+        }
+        .secure_img3{
+            position: absolute;
+            right: 10%;
+            bottom: 1%;
+            display: block;
+            width: 30%;
+        }
+    }
+    .secure_heading{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: block;
+        text-align: center;
+        z-index: 30;
+        width: 100%;
+        h5{
+            color:$yellow;
+            @include h5;
+        }
+        h1{
+            color:$white;
+            @include h1;
+        }
+        p{
+            color:$white;
+            @include p;
+        }
+        .achor{
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            a{
+                @include mainButton;
+            }
+        }
+
+    }
+}
+
+/*--antifraud part------------*/
+#antifraud{
+    padding: 80px 0;
+    .fraud_txt{
+        text-align: left !important;
+        @include headline;
+    }
+}
+
+/*--customw role--------------*/
+#custom_role{
+    padding: 70px 0;
+    .role_heading{
+        text-align: left !important;
+        @include headline;
+        margin-top: 30px;
+        .rolebtn{
+            a{
+                @include mainButton;
+            }
+        }
+    }
+}
+
+/*--tireSecurity--------------*/
+#tireSecurity{
+    background: $blue;
+    padding-top: 70px;
+    .tire_txt{
+        text-align: left !important;
+        h5{
+            color:$white !important;
+        }
+        @include headline;
+        .tireBtn{
+            background: $white;
+            display: inline-block;
+            border-radius: 30px;
+            overflow: hidden;
+            a{
+                @include button;
+                transition: all linear .5s;
+                &:hover{
+                    transform: rotateX(360deg);
+                }
+            }
+        }
+    }
+}
